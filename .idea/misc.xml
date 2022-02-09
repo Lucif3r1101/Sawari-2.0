@@ -4,6 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Project Home/Sawari20/app/src/main/res/drawable/splash_screen.xml" value="0.2625" />
+        <entry key="..\:/Project Home/Sawari20/app/src/main/res/layout/activity_driver_home.xml" value="0.10400000000000001" />
+        <entry key="..\:/Project Home/Sawari20/app/src/main/res/layout/activity_maps.xml" value="0.11980749746707194" />
+        <entry key="..\:/Project Home/Sawari20/app/src/main/res/layout/activity_splash_screen.xml" value="0.11980749746707194" />
+        <entry key="..\:/Project Home/Sawari20/app/src/main/res/layout/app_bar_driver_home.xml" value="0.10597826086956522" />
+        <entry key="..\:/Project Home/Sawari20/app/src/main/res/layout/content_driver_home.xml" value="0.10914855072463768" />
+        <entry key="..\:/Project Home/Sawari20/app/src/main/res/layout/fragment_home.xml" value="0.11980749746707194" />
+        <entry key="..\:/Project Home/Sawari20/app/src/main/res/layout/fragment_slideshow.xml" value="0.10597826086956522" />
+        <entry key="..\:/Project Home/Sawari20/app/src/main/res/layout/layout_register.xml" value="0.11980749746707194" />
+        <entry key="..\:/Project Home/Sawari20/app/src/main/res/layout/layout_sign_in.xml" value="0.10597826086956522" />
+        <entry key="..\:/Project Home/Sawari20/app/src/main/res/layout/nav_header_driver_home.xml" value="0.10597826086956522" />
       </map>
     </option>
   </component>
