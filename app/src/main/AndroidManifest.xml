@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sawari20">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
