@@ -195,7 +195,7 @@ public class HomeFragment extends Fragment {
                                             @Override
                                             public void onSuccess(Location location) {
                                                 LatLng userLatLng = new LatLng(location.getLatitude(), location.getLongitude());
-                                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 10f));
+                                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 20f));
                                             }
                                         });
                                 return true;

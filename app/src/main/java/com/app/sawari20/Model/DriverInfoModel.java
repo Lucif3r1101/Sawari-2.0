@@ -2,7 +2,7 @@ package com.app.sawari20.Model;
 
 public class DriverInfoModel {
 
-    public String firstname, lastName, phoneNumber;
+    public String firstname, lastName, phoneNumber, avatar;
     private double rating;
 
     public DriverInfoModel() {
@@ -38,5 +38,13 @@ public class DriverInfoModel {
 
     public void setRating(double rating) {
         this.rating = rating;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 }
