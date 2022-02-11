@@ -1,15 +1,13 @@
-package com.app.sawari20.Utils;
+package com.app.sawaridriver.Utils;
 
 import android.content.Context;
 import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.app.sawari20.Common;
-import com.app.sawari20.Model.TokenModel;
-import com.app.sawari20.Service.MyFirebaseMessagingService;
+import com.app.sawaridriver.Common;
+import com.app.sawaridriver.Model.TokenModel;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;

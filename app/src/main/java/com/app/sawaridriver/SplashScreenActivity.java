@@ -1,4 +1,4 @@
-package com.app.sawari20;
+package com.app.sawaridriver;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,8 +16,8 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.app.sawari20.Model.DriverInfoModel;
-import com.app.sawari20.Utils.UserUtils;
+import com.app.sawaridriver.Model.DriverInfoModel;
+import com.app.sawaridriver.Utils.UserUtils;
 import com.firebase.ui.auth.AuthMethodPickerLayout;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
@@ -31,7 +31,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.installations.FirebaseInstallations;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.Arrays;
@@ -42,10 +41,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.core.Completable;
-import io.reactivex.*;
-import io.reactivex.rxjava3.schedulers.Schedulers;
-
-
 
 
 public class SplashScreenActivity extends AppCompatActivity {

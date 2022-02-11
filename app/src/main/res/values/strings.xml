@@ -18,5 +18,6 @@
 
 
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="permission_require">Location permission require</string>
 
 </resources>

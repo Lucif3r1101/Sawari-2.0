@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.app.sawari20">
+    package="com.app.sawaridriver">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -33,12 +33,12 @@
 
 
         <activity
-            android:name=".DriverHomeActivity"
+            android:name="com.app.sawaridriver.DriverHomeActivity"
             android:exported="true"
             android:label="@string/title_activity_driver_home"
             android:theme="@style/Theme.Sawari20.NoActionBar" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name="com.app.sawaridriver.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -48,7 +48,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".Service.MyFirebaseMessagingService"
+        <service android:name="com.app.sawaridriver.Service.MyFirebaseMessagingService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>

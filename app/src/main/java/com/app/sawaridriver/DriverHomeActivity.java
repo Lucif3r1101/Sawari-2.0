@@ -1,4 +1,4 @@
-package com.app.sawari20;
+package com.app.sawaridriver;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -12,7 +12,7 @@ import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.app.sawari20.Utils.UserUtils;
+import com.app.sawaridriver.Utils.UserUtils;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -24,6 +24,7 @@ import com.google.android.material.navigation.NavigationView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -31,7 +32,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.app.sawari20.databinding.ActivityDriverHomeBinding;
+import com.app.sawaridriver.databinding.ActivityDriverHomeBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
@@ -204,9 +205,9 @@ public class DriverHomeActivity extends AppCompatActivity {
                     AlertDialog dialog = builder.create();
                     dialog.setOnShowListener(dialogInterface -> {
                         dialog.getButton(AlertDialog.BUTTON_POSITIVE)
-                                .setTextColor(getResources().getColor(android.R.color.holo_red_dark));
+                                .setTextColor(ContextCompat.getColor(DriverHomeActivity.this,android.R.color.holo_red_dark));
                         dialog.getButton(AlertDialog.BUTTON_NEGATIVE)
-                                .setTextColor(getResources().getColor(R.color.colorAccent));
+                                .setTextColor(ContextCompat.getColor(DriverHomeActivity.this,R.color.colorAccent));
 
                     });
                     dialog.show();

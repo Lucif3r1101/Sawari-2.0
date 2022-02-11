@@ -1,4 +1,4 @@
-package com.app.sawari20.ui.home;
+package com.app.sawaridriver.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

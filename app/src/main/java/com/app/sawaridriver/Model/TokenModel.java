@@ -1,10 +1,14 @@
-package com.app.sawari20.Model;
+package com.app.sawaridriver.Model;
 
 public class TokenModel {
 
     private String token;
 
+    public TokenModel(){
+
+    }
     public TokenModel(String token) {
+        this.token = token;
     }
 
     public String getToken() {
