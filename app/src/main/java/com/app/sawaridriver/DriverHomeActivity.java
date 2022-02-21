@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
@@ -45,6 +46,7 @@ import java.util.Map;
 public class DriverHomeActivity extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 7172;
+    private static final String TAG = "Error";
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityDriverHomeBinding binding;
     private DrawerLayout drawer;
@@ -61,8 +63,14 @@ public class DriverHomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityDriverHomeBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        try {
+            binding = ActivityDriverHomeBinding.inflate(getLayoutInflater());
+            setContentView(binding.getRoot());
+            setSupportActionBar(binding.appBarDriverHome.toolbar);
+        }catch(Exception e){
+            Log.e(TAG, "onCreateView", e);
+            throw e;
+        }
 
         setSupportActionBar(binding.appBarDriverHome.toolbar);
 

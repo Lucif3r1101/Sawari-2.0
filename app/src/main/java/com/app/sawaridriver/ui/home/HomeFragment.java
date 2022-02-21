@@ -168,15 +168,12 @@ public class HomeFragment extends Fragment {
                     geoFire.setLocation(FirebaseAuth.getInstance().getCurrentUser().getUid(),
                             new GeoLocation(locationResult.getLastLocation().getLatitude(),
                                     locationResult.getLastLocation().getLongitude()),
-                            new GeoFire.CompletionListener() {
-                                @Override
-                                public void onComplete(String key, DatabaseError error) {
-                                    if (error != null) {
-                                        Snackbar.make(mapFragment.getView(), error.getMessage(), Snackbar.LENGTH_LONG).show();
-                                    } else {
-                                        Snackbar.make(mapFragment.getView(), "You are online!!", Snackbar.LENGTH_LONG).show();
+                            (key, error) -> {
+                                if (error != null) {
+                                    Snackbar.make(mapFragment.getView(), error.getMessage(), Snackbar.LENGTH_LONG).show();
+                                } else {
+                                    Snackbar.make(mapFragment.getView(), "You are online!!", Snackbar.LENGTH_LONG).show();
 
-                                    }
                                 }
                             });
 
@@ -225,18 +222,10 @@ public class HomeFragment extends Fragment {
                                      return false;
                                 }
                                 fusedLocationProviderClient.getLastLocation()
-                                        .addOnFailureListener(new OnFailureListener() {
-                                            @Override
-                                            public void onFailure(@NonNull Exception e) {
-                                                Toast.makeText(getContext(), "" + e.getMessage(), Toast.LENGTH_SHORT).show();
-                                            }
-                                        })
-                                        .addOnSuccessListener(new OnSuccessListener<Location>() {
-                                            @Override
-                                            public void onSuccess(Location location) {
-                                                LatLng userLatLng = new LatLng(location.getLatitude(), location.getLongitude());
-                                                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 20f));
-                                            }
+                                        .addOnFailureListener(e -> Toast.makeText(getContext(), "" + e.getMessage(), Toast.LENGTH_SHORT).show())
+                                        .addOnSuccessListener(location -> {
+                                            LatLng userLatLng = new LatLng(location.getLatitude(), location.getLongitude());
+                                            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLatLng, 20f));
                                         });
                                 return true;
                             }

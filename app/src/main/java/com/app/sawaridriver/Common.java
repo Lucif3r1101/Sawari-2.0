@@ -29,7 +29,7 @@ public class Common {
         if(Common.currentUser != null)
         {
             return new StringBuilder("Welcome ")
-                    .append(Common.currentUser.getFirstname())
+                    .append(Common.currentUser.getFirstName())
                     .append(" ")
                     .append(Common.currentUser.getLastName()).toString();
         }

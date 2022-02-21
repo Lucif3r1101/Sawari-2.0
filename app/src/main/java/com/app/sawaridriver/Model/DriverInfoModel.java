@@ -2,18 +2,18 @@ package com.app.sawaridriver.Model;
 
 public class DriverInfoModel {
 
-    public String firstname, lastName, phoneNumber, avatar;
+    public String firstName, lastName, phoneNumber, avatar;
     private double rating;
 
     public DriverInfoModel() {
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {

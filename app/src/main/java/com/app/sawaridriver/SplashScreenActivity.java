@@ -193,7 +193,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             }
             else{
                 DriverInfoModel model = new DriverInfoModel();
-                model.setFirstname(edt_first_name.getText().toString());
+                model.setFirstName(edt_first_name.getText().toString());
                 model.setLastName(edt_last_name.getText().toString());
                 model.setPhoneNumber(edt_phone.getText().toString());
                 model.setRating(0.0);
